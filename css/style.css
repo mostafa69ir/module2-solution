@@ -1,0 +1,75 @@
+/* Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px 0 50px 0;
+    font-size: 2em;
+}
+
+.menu-item {
+    background-color: #999999; /* Grey background */
+    border: 2px solid black;
+    margin-bottom: 20px;
+    padding: 45px 20px 20px 20px;
+    position: relative; /* Needed for absolute positioning of the title */
+}
+
+.category-title {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 2px solid black;
+    border-top: none;
+    border-right: none;
+    padding: 5px 25px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* Category specific colors */
+.chicken { background-color: #FFB6C1; } /* Light Pink */
+.beef { background-color: #E57373; } /* Red */
+.sushi { background-color: #FFD54F; } /* Gold/Yellow */
+
+.row {
+    width: 95%;
+    margin: 0 auto;
+}
+
+
+/* --- Desktop View --- */
+@media (min-width: 992px) {
+    .col-lg-4 {
+        width: 32%;
+        float: left;
+        margin: 0.66%;
+    }
+}
+
+/* --- Tablet View --- */
+@media (min-width: 768px) and (max-width: 991px) {
+    .col-md-6 {
+        width: 48%;
+        float: left;
+        margin: 1%;
+    }
+    .col-md-12 {
+        width: 98%;
+        float: left;
+        margin: 1%;
+    }
+}
+/* --- Mobile View --- */
+@media (max-width: 767px) { 
+    .col-sm-12 {
+        width: 98%;
+        float: left;
+        margin: 1%;
+    }
+}
